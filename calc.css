@@ -1,0 +1,44 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+body{
+    background:linear-gradient(to right, rgb(0, 255, 255), rgb(238, 245, 178));
+    padding: 0;
+    margin: 0;
+}
+.calc{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calc button{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid rgb(226, 218, 218);
+    background-color: white;
+}
+.calc > button:hover{
+    background-color: rgb(162, 75, 233);
+}
+.display {
+    grid-column: 1 / -1;
+    background-color: rgb(205, 187, 223);
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+    font-family: serif;
+}
+.display .new-values{
+    color: white;
+    font-size: medium;
+}
+.display .previous-values{
+color: orange;
+font-size: small;
+}
